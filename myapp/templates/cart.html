@@ -1,0 +1,50 @@
+{% extends 'header.html' %}
+
+{% load static %}
+{% block content %}
+<!--/ Header end -->
+
+
+  <div class="container">
+    <div class="row">
+      <table class="table">
+        <tr>
+          <th>Product Image</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        {% for item in cartitems %}
+        <tr>
+          <td><img src="{{item.product.pic.url}}" height="50" width="50"></td>
+          <td>{{item.product.name}}</td>
+          <td>{{item.product.discountedprice}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      <br>
+      <div class="col-md-4 col-md-left-8">
+        <table class="table">
+          <tr>
+            <td colspan="4">Cart Summary</td>
+            </tr>
+            <th>Cart Total</th>
+            <td>{{carttotal}}</td>
+            <tr>
+              <td colspan="4">
+                <a href="{% url 'pay' %}" class="btn btn-warning">Checkout</a>
+              </td>
+            </tr>
+        </table>
+      </div>
+      
+      
+
+    </div><!-- Main row end -->
+    
+  </div><!-- Conatiner end -->
+  
+ 
+
+ 
+
+  {% endblock %}

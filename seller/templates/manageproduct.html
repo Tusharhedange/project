@@ -1,0 +1,63 @@
+{% extends 'sellerheader.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+    <!-- main content start-->
+    <div id="page-wrapper">
+       
+        <div class="forms">
+
+            <div class="row">
+                
+                
+                <div class="panel-info widget-shadow">
+                    <h2>Product List</h2>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Discount</th>
+                            <th>Image</th>
+                        </tr>
+                        {% for item in productlist %}
+                        <tr>
+                            <td>{{item.name}}</td>
+                            <td>{{item.des}}</td>
+                            <td>{{item.price}}</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.discount}}</td>
+                            <td><img src="{{item.pic.url}}" alt="image of {{item.name}}" title="image of {{item.name}}" height="60" width="60"></td>
+                            <td>
+                                <a href="{% url 'editproduct' item.id %}">Edit</a>
+                                <a href="{% url 'deleteproduct' item.id %}">Delete</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                
+                
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+                
+                
+            
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+       <p>&copy; 2016 Novus Admin Panel. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+    </div>
+    <!--//footer-->
+</div>
+
+{% endblock %}

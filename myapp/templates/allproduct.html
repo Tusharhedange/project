@@ -1,0 +1,159 @@
+{% extends 'header.html' %}
+
+{% load static %}
+{% block content %}
+<div id="banner-area" class="banner-area" style="background-image:url(static/images/banner/banner1.jpg)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Service</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Services</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">All Services</li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end --> 
+
+<section id="main-container" class="main-container pb-2">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{% static 'images/services/hardware.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon1.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="{% url 'hardware' %}">Hardware</a></h3>
+                  <p>Hardware products are generally categorized as products/tools used in construction and home improvement.</p>
+                  <a class="learn-more d-inline-block" href="{% url 'hardware' %}" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" height="235" src="{% static 'images/services/Door.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon2.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="#">Door</a></h3>
+                  <p>Doors are openable barriers at the entrance to buildings, rooms or other spaces such as cupboards that allow people, vehicles or goods to enter and leave.</p>
+                  <a class="learn-more d-inline-block" href="#" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service2 end -->
+      </div><!-- Col 2 end -->
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" height='235' src="{% static 'images/services/Glass.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon3.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="service-single.html">Glass</a></h3>
+                  <p>Glass can absorb, refract or transmit light. It has the ability to make any building look more stunning and modern.</p>
+                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service3 end -->
+      </div><!-- Col 3 end -->
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" height="235" src="{% static 'images/services/window.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon4.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="service-single.html">Windows</a></h3>
+                  <p>window, opening in the wall of a building for the admission of light and air; windows are often arranged also for the purposes of architectural decoration.</p>
+                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 4 end -->
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" height="235" src="{% static 'images/services/service5.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon5.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="service-single.html">Waterproofing</a></h3>
+                  <p>Waterproofing is the process of making an object or structure waterproof or water-resistant so that it remains relatively unaffected by water or resisting the ingress of water under specified conditions.</p>
+                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service2 end -->
+      </div><!-- Col 5 end -->
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" height="235" src="{% static 'images/services/tile.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon6.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="service-single.html">Tile Adhesive</a></h3>
+                  <p>Tile adhesive is ready-mixed glue used to lay tiles in building structures. It is specially formulated from Portland cement, selected fine aggregates, with some additives to improve its properties for laying tiles</p>
+                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service3 end -->
+      </div><!-- Col 6 end -->
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="{% static 'images/services/Sealants.jpg' %}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                  <img loading="lazy" src="{% static 'images/icon-image/service-icon1.png' %}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                  <h3 class="service-box-title"><a href="service-single.html">Sealants</a></h3>
+                  <p>Sealant is a substance used to block the passage of fluids through openings in materials, a type of mechanical seal.</p>
+                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+              </div>
+            </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
+
+    </div><!-- Main row end -->
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+{% endblock %}
